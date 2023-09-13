@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta lang="de">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stundenplan</title>
+    <meta name="theme-color" content="rgb(11,17,30)">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="res/icon.svg">
+</head>
+<body>
+    <div id="topscroll"></div>
+    <div class="NavBarContainer">
+        <div class="TopNavBar">
+           <img onclick="ScrollIntoView('topscroll')" title="Stundenplan" class="TopNavBar_Item" src="res/home_FILL0_wght400_GRAD0_opsz48.png">
+           <img onclick="ScrollIntoView('VertretungenList')" title="Vertretungen" class="TopNavBar_Item" src="res/groups_FILL0_wght400_GRAD0_opsz48.png">
+           <img onclick="ScrollIntoView('HomeWorkList')" title="Hausaufgaben" class="TopNavBar_Item" src="res/list_alt_FILL0_wght400_GRAD0_opsz48.png">
+           <img onclick="ScrollIntoView('TaskList')" title="Arbeiten" class="TopNavBar_Item" src="res/task_FILL0_wght400_GRAD0_opsz48.png">
+       </div>
+   </div>
+    <div class="main">      
+        <div class="TopInfo" id="TopInfo"></div>
+        <div class="wrapper" id="wrapper">
+            <div class="hoursList" >
+                <div class="hourList_Hour hoursList_Headline">
+                    Stunden
+                </div>
+                <div class="hourList_Hour">
+                    8:00 - 8:45 
+                </div>
+                <div class="hourList_Hour">
+                    8:45 - 9:30 
+                </div>
+                <div class="hourList_Hour">
+                    9:50 - 10:35 
+                </div>
+                <div class="hourList_Hour">
+                    10:35 - 11:20 
+                </div>
+                <div class="hourList_Hour">
+                    11:40 - 12:25 
+                </div>
+                <div class="hourList_Hour">
+                    12:25 - 13:10
+                </div>
+                <div class="hourList_Hour">
+                    13:40 - 14:25
+                </div>
+                <div class="hourList_Hour">
+                    14:25 - 15:10
+                </div>
+                <div class="hourList_Hour">
+                    15:10 - 16:00 
+                </div>
+                <div class="hourList_Hour">
+                    16:00 - 16:45 
+                </div>
+            </div>
+            <div class="DayList">
+                <div class="Day" id="Day1">
+                    <div class="DayHeadline2">Montag</div> 
+                    <div>
+                        <div class="DayHeadline">
+                            Mathe
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Mathe
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Infotech
+                            <div class="Day_Room">E305</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Infotech
+                            <div class="Day_Room">E305</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Tekodv
+                            <div class="Day_Room">A217</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Tekodv
+                            <div class="Day_Room">A217</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Sport
+                            <div class="Day_Room">CAP1</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Sport
+                            <div class="Day_Room">CAP1</div>
+                        </div>
+                        <div class="DayHeadline"></div>
+                    <div class="DayHeadline"></div>
+                    </div>
+                </div>
+                <div class="Day" id="Day2">
+                    <div class="DayHeadline2" >Dienstag</div> 
+                    <div>
+                        <div class="DayHeadline">
+                            Physik
+                            <div class="Day_Room">E305</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Physik
+                            <div class="Day_Room">E305</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Geschichte
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Geschichte
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Deutsch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Deutsch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline HourItem_Secondary">
+                            Spanisch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline HourItem_Secondary">
+                            Spanisch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline HourItem_Secondary">
+                            Spanisch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                    <div class="DayHeadline"></div>
+                    </div>
+                </div>
+                <div class="Day" id="Day3">
+                    <div class="DayHeadline2">Mittwoch</div> 
+                    <div>
+                        <div class="DayHeadline">
+                            Englisch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Englisch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Praktinfo
+                            <div class="Day_Room">E213</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Praktinfo
+                            <div class="Day_Room">E213</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Tutoren
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline HourItem_Secondary">
+                            Spanisch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline HourItem_Secondary">
+                            F. Mathe
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline HourItem_Secondary">
+                            F. Deu/Eng
+                            <div class="Day_Room">E410</div>
+                        </div>
+                    <div class="DayHeadline"></div>
+                        <div class="DayHeadline"></div>
+                    </div>
+                </div>
+                <div class="Day" id="Day4">
+                    <div class="DayHeadline2">Donnerstag</div> 
+                    <div>
+                        <div class="DayHeadline">
+                            Deutsch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Deutsch
+                            <div class="Day_Room">E410</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Bio
+                            <div class="Day_Room">A207</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Bio
+                            <div class="Day_Room">A207</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Praktinfo
+                            <div class="Day_Room">E213</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Praktinfo
+                            <div class="Day_Room">E213</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Infotech
+                            <div class="Day_Room">E213</div>
+                        </div>
+                        <div class="DayHeadline">
+                            Infotech
+                            <div class="Day_Room">E213</div>
+                        </div>
+                        <div class="DayHeadline"></div>
+                    <div class="DayHeadline"></div>
+
+                    </div>
+                </div>
+                <div class="Day" id="Day5">
+                    <div class="DayHeadline2">Freitag</div> 
+                    <div class="DayHeadline">Rel/Eth</div>
+                    <div class="DayHeadline">Rel/Eth</div>
+                    <div class="DayHeadline">
+                        Englisch
+                        <div class="Day_Room">E410</div>
+                    </div>
+                    <div class="DayHeadline">
+                        Englisch
+                        <div class="Day_Room">E410</div>
+                    </div>
+                    <div class="DayHeadline">
+                        PoWi
+                        <div class="Day_Room">E410</div>
+                    </div>
+                    <div class="DayHeadline">
+                        PoWi
+                        <div class="Day_Room">E410</div>
+                    </div>
+                    <div class="DayHeadline">
+                        Mathe
+                        <div class="Day_Room">E410</div>
+                    </div>
+                    <div class="DayHeadline">
+                        Mathe
+                        <div class="Day_Room">E410</div>
+                    </div>
+                    <div class="DayHeadline"></div>
+                    <div class="DayHeadline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="UpdateSiteInfo">
+        Ctrl + Shift + R falls die Seite nicht richtig angezeigt wird
+    </div> 
+    <script src="stringHelper.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
