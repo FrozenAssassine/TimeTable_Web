@@ -248,55 +248,6 @@ margin-top: 100px;
     height: max-content;
     margin-bottom: 200px;
 }
-.NavBarContainer{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-
-    width: 100%;
-    position: fixed;
-}
-
-.TopNavBar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 50px;
-    width: 250px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: rgb(11,17,30);
-    box-shadow: 0px 0px 10px rgb(79, 79, 79);
-}
-.TopNavBar_Item
-{
-    user-select: none;
-    margin: 5px;
-    width: 30px;
-    height: 30px;
-    margin-top:10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    filter: invert();
-    cursor: pointer;
-    transition-duration: 400ms;
-}
-
-.TopNavBar_Item:hover{
-    transform: rotateZ(180deg);
-    width: 40px;
-    height: 40px;
-}
-
-@keyframes rotateItem {
-    0%{
-
-    }
-    75%{
-    }
-}
 
 @media only screen and (max-width: 1200px){
     body{
