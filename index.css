@@ -1,3 +1,7 @@
+:root{
+    --topcolor: #00a2ff;
+}
+
 body{
     background-color: rgb(2, 5, 20);
     padding: 0;
@@ -62,7 +66,7 @@ body{
     height: 50px;
     border: 1px solid white;
     width: 150px;
-    color:rgb(100,0,255 );
+    color:rgb(100,0,255);
 }
 .DayHeadline{
     display: flex;
@@ -81,7 +85,8 @@ body{
 }
 
 .HourItem_Secondary{
-    color: rgb(147, 147, 147);
+    color: rgb(123, 123, 123);
+    font-size: 20px;
 }
 
 .HourItem{
@@ -96,7 +101,6 @@ body{
 
 .ActiveHour{
     color: black;
-    box-shadow: 0px 0px 20px white;
     background: rgb(144, 185, 238);
 }
 .TopInfo{
@@ -113,141 +117,9 @@ body{
 .TimeText{
     font-size: 110%;
     font-weight: 1000;
-    color: rgb(100,0,255 )
+    color: rgb(100,0,255);
 }
 
-.Hour_Entfall {
-    background-color: rgba(255, 0, 0, 0.4);
-}
-.Hour_Vertretung, .HourItemVertretung{
-    background-color: rgba(255, 120, 0, 0.4);
-}
-.Hour_RaumVertretung, .HourItemVertretung{
-    background-color: rgba(0, 110, 255, 0.3);
-}
-.Hour_Entfall_Text{
-    color: rgba(255, 0, 0, 1);
-}
-.Hour_Vertretung_Text{
-    color: rgba(255, 120, 0, 1);
-}
-.Hour_RaumVertretung_Text{
-    color: rgba(0, 110, 255, 1);
-}
-.Hour_RaumVertretung_Text{
-    color: rgb(21, 255, 0);
-}
-
-.TaskList{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: max-content;
-    margin-top: 200px;
-}
-
-.TaskListItem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-radius: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 24px;
-
-    cursor: pointer;
-    margin: 3px;
-}
-.TaskListItem:hover{
-    box-shadow: 0px 0px 10px white;
-}
-
-.TaskListSubItem{
-    margin: 10px;
-}
-.TaskListSubjectColor{
-    color: rgb(255, 0, 255);
-}
-.TaskListDateColor{
-    color: rgb(0, 229, 255);
-}
-.TaskListTitleColor{
-    color: rgb(0, 255, 34);
-}
-.TaskListDescriptionColor{
-    color: rgb(255, 255, 255);
-}
-
-.TaskListRedColor{
-    color: rgb(255, 102, 0);
-}
-
-.ExpandableContent{
-    display: flex;
-    align-content: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    display: none;
-    height: 10px;
-}
-.ExpandableHeader{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    visibility: visible;
-}
-
-.DismissDiv{
-    width: 100vw;
-    height: 100vh;
-    visibility: collapse;
-}
-
-.TaskListHeadLine{
-    font-size: 42px;   
-    margin-bottom: 100px;
-}
-
-.UpdateSiteInfo{
-    font-size: 22px;
-margin-top: 100px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: red;
-}
-
-.HyperLink{
-    color: rgb(255, 123, 0);
-    font-weight: bolder;
-}
-
-.HomeWorkListItem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.HomeWorkListItem_Item{
-    margin: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.HomeWorkList{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
-    height: max-content;
-    margin-bottom: 200px;
-}
 
 @media only screen and (max-width: 1200px){
     body{
@@ -263,9 +135,6 @@ margin-top: 100px;
     }
     .TopInfo{
         font-size: 20px;
-    }
-    .TaskListItem{
-        font-size: 22px;
     }
 }
 
@@ -284,7 +153,6 @@ margin-top: 100px;
     .TopInfo{
         font-size: 18px;
     }
-
 }
 
 @media only screen and (max-width: 800px){
@@ -303,9 +171,6 @@ margin-top: 100px;
     .TopInfo{
         font-size: 16px;
     }
-    .TaskListItem{
-        font-size: 14px;
-    }
 }
 
 @media only screen and (max-width: 700px){
@@ -314,7 +179,6 @@ margin-top: 100px;
     }
     .hourList_Hour{
         width: 50px;
-
     }
     .DayHeadline, .DayHeadline2{
         width: 70px;
@@ -323,9 +187,6 @@ margin-top: 100px;
     }
     .TopInfo{
         font-size: 16px;
-    }
-    .TaskListItem{
-        font-size: 14px;
     }
 }
 
@@ -344,12 +205,6 @@ margin-top: 100px;
     }
     .TopInfo{
         font-size: 16px;
-    }
-    .TaskListItem{
-        font-size: 14px;
-    }
-    .HomeWorkListItem_Item{
-        margin: 5px;
     }
 }
 
@@ -373,12 +228,6 @@ margin-top: 100px;
         padding-right: 0px;
     }
     .TopInfo{
-        font-size: 12px;
-    }
-    .HomeWorkListItem_Item{
-        margin: 2px;
-    }
-    .TaskListItem{
         font-size: 12px;
     }
 }
