@@ -1,0 +1,174 @@
+:root{
+    --topcolor: #00a2ff;
+}
+
+body{
+    background-color: rgb(2, 5, 20);
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-family: "Consolas";
+    overflow-x: hidden;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x:  hidden;
+    width: 100vw;
+    height: max-content;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    overflow:  hidden;
+    height: max-content;
+}
+.hoursList{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.hourList_Hour{
+    padding: 0px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(144, 185, 238);
+}
+.hoursList_Headline{
+    color:rgb(100,0,255 );
+}
+
+.Day{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.WeekDayHeadline{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid white;
+    width: 150px;
+    color:rgb(100,0,255);
+}
+.DayHeadline{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid white;
+    width: 150px;
+}
+.DayList{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.HourItem_Secondary{
+    color: rgb(123, 123, 123);
+}
+
+.HourItem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.ActiveHour{
+    color: black;
+    background: rgb(144, 185, 238);
+}
+.TopInfo{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.Day_Room{
+    font-size: 8px;
+}
+
+.TimeText{
+    font-size: 110%;
+    font-weight: 1000;
+    color: rgb(100,0,255);
+}
+
+
+.Day_Activity{
+    font-size: 10px;
+    color: rgb(200, 0, 200);
+}
+
+@media only screen and (max-width: 786){
+    body{
+        font-size: 12px;
+    }
+    .hourList_Hour{
+        width: 130px;
+    }
+    .DayHeadline, .WeekDayHeadline{
+        width: 120px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: green;
+    }
+    .TopInfo{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    body{
+        font-size: 10px;
+        overflow-x: scroll;
+        width: auto;
+    }
+    .hourList_Hour{
+        width: 20px;
+
+    }
+    .Day_Room{
+        font-size: 10px;
+    }
+    .DayHeadline, .WeekDayHeadline{
+        width: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .TopInfo{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-height: 600px){
+    body{
+        overflow-y: auto;
+        height: auto;
+    }
+}
